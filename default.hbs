@@ -19,7 +19,7 @@
 	</script>
 
 	<script>
-			var localTheme = localStorage.getItem('attila_theme');
+			var localTheme = localStorage.getItem('attila_theme') || "dark";
 			switch (localTheme) {
 					case 'dark':
 							document.documentElement.classList.add('theme-dark');
@@ -45,7 +45,7 @@
 				</span>
 				{{/if}}
 				{{navigation}}
-				{{> "navigation-meta"}}
+				{{!-- {{> "navigation-meta"}} --}}
 		</nav>
 
 		<div class="nav-wrapper-control">
